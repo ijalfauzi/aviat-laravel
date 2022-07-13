@@ -22,7 +22,7 @@
       <a href="/" class="h1"><img src="assets/images/aviat-logo.webp" alt=""></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Silakan masuk untuk memulai sesi</p>
 
       @error('loginError')
         <div class="alert alert-danger">
@@ -51,7 +51,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
           </div>
           <!-- /.col -->
         </div>
