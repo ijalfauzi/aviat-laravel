@@ -14,7 +14,9 @@ class SliderController extends Controller
      */
     public function index()
     {
-        //
+        $sliders = Slider::all();
+
+        return view('slider.index', compact('sliders'));
     }
 
     /**
@@ -24,7 +26,7 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
+        return view('slider.create');
     }
 
     /**
@@ -35,7 +37,23 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required', 'image' => 'required|image'
+        ]);
+
+        $input = $request->all();
+
+        if ($image = $request->file('image')) {
+            $destinationPath = 'image/';
+            $imageName = date('Ymd') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        };
+
+        Slider::create($input);
+
+        return redirect('/sliders')->with('message', 'Gambar berhasil ditambahkan');
+
     }
 
     /**
@@ -57,7 +75,7 @@ class SliderController extends Controller
      */
     public function edit(Slider $slider)
     {
-        //
+        return view('slider.edit', compact('slider'));
     }
 
     /**
@@ -69,7 +87,24 @@ class SliderController extends Controller
      */
     public function update(Request $request, Slider $slider)
     {
-        //
+        $request->validate([
+            'title' => 'required', 'image' => 'image'
+        ]);
+
+        $input = $request->all();
+
+        if ($image = $request->file('image')) {
+            $destinationPath = 'image/';
+            $imageName = date('Ymd') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        } else {
+            unset($input['image']);
+        }
+
+        $slider->update($input);
+
+        return redirect('/sliders')->with('message', 'Gambar berhasil diubah');
     }
 
     /**
