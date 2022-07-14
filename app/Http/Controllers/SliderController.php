@@ -45,7 +45,7 @@ class SliderController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') . "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] = $imageName;
         };
@@ -95,7 +95,7 @@ class SliderController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') . "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] = $imageName;
         } else {
@@ -115,6 +115,8 @@ class SliderController extends Controller
      */
     public function destroy(Slider $slider)
     {
-        //
+        $slider->delete();
+
+        return redirect('/sliders')->with('message', 'Gambar berhasil dihapus');
     }
 }

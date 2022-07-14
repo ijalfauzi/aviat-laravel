@@ -26,7 +26,7 @@
                         <small style="color: red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Upload</button>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     </div>
                 </form>
             </div>
