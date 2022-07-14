@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Data Slider')
+@section('title', 'Daftar Klien')
 
 @section('content')
     <div class="container">

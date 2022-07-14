@@ -81,7 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Halaman
+                Konten Halaman
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -89,7 +89,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="/sliders" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Slider</p>
+                  <p>Daftar Klien</p>
                 </a>
               </li>
               <li class="nav-item">
