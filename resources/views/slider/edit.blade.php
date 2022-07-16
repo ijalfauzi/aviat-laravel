@@ -17,7 +17,7 @@
                     @error('title')
                         <small style="color: red">{{ $message }}</small>
                     @enderror
-                    <img src="/image/{{ $slider->image }}" alt="" class="img-fluid">
+                    <img src="/image/{{ $slider->image }}" style="max-width: 65%;margin:0 auto;display:block" alt="" class="img-fluid">
                     <div class="form-group">
                         <label for="">Gambar</label>
                         <input type="file" class="form-control" name="image">

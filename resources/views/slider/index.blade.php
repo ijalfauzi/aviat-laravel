@@ -28,8 +28,8 @@
                 <tr>
                     <td>{{ $i++ }}</td>
                     <td>{{ $slider->title }}</td>
-                    <td>
-                        <img src="/image/{{$slider->image}}" alt="" class="img-fluid">
+                    <td style="text-align: center">
+                        <img src="/image/{{$slider->image}}" alt="" style="max-width:65%" class="img-fluid">
                     </td>
                     <td>
                         <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-warning mb-2">Edit</a>
