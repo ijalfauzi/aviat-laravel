@@ -139,31 +139,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/demos" class="nav-link">
                   <i class="fas fa-laptop nav-icon"></i>
                   <p>Request Demo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/compros" class="nav-link">
                   <i class="far fa-building nav-icon"></i>
                   <p>Company Profile</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/kontak" class="nav-link">
+                <a href="/contacts" class="nav-link">
                   <i class="fa fa-phone nav-icon"></i>
                   <p>Kontak Kami</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/moduls" class="nav-link">
                   <i class="far fa-eye nav-icon"></i>
                   <p>Preview Modul</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="whatsapps" class="nav-link">
                   <i class="fa fa-comment nav-icon"></i>
                   <p>WhatsApp Chat</p>
                 </a>
