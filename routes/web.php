@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 // Home 
@@ -33,3 +34,8 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 // Slider
 
 Route::resource('sliders', SliderController::class)->middleware('auth');
+
+// Contact
+
+Route::get('/contact-us', [ContactController::class, 'index']);
+Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.store');

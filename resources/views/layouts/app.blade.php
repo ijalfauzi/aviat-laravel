@@ -129,7 +129,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
-          <li class="nav-item menu-close">
+          <li class="nav-item menu-open">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-database"></i>
               <p>
@@ -151,7 +151,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/kontak" class="nav-link">
                   <i class="fa fa-phone nav-icon"></i>
                   <p>Kontak Kami</p>
                 </a>
