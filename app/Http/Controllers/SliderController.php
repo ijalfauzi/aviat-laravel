@@ -52,7 +52,7 @@ class SliderController extends Controller
 
         Slider::create($input);
 
-        return redirect('/sliders')->with('message', 'Gambar berhasil ditambahkan');
+        return redirect('/sliders')->with('message', 'Image added sucessfully');
 
     }
 
@@ -104,7 +104,7 @@ class SliderController extends Controller
 
         $slider->update($input);
 
-        return redirect('/sliders')->with('message', 'Gambar berhasil diubah');
+        return redirect('/sliders')->with('message', 'Image changed successfully');
     }
 
     /**
@@ -117,6 +117,6 @@ class SliderController extends Controller
     {
         $slider->delete();
 
-        return redirect('/sliders')->with('message', 'Gambar berhasil dihapus');
+        return redirect('/sliders')->with('message', 'Image deleted successfully');
     }
 }
