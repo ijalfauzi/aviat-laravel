@@ -28,7 +28,7 @@ class AuthController extends Controller
         }
 
         return back()->withErrors([
-            'loginError' => 'Email atau password salah'
+            'loginError' => 'Email or password you entered is wrong!'
         ]);
     }
 
