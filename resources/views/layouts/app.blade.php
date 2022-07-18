@@ -215,7 +215,7 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="/" title="Visit Website">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="/" title="Visit Website" target="_blank">
                         <div class="brand-logo"><img class="logo" src="/assets/images/aviat.webp" /></div>
                         <h2 class="brand-text mb-0">Aviat</h2>
                     </a></li>
