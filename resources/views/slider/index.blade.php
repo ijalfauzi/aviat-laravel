@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/sliders/create" class="btn btn-primary mb-3">Tambah Gambar</a>
+        <a href="/sliders/create" class="btn btn-primary mb-3">Add Image</a>
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
                 <strong>Berhasil</strong>
@@ -14,10 +14,10 @@
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Judul</th>
-                    <th>Gambar</th>
-                    <th>Aksi</th>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,11 +32,11 @@
                         <img src="/image/{{$slider->image}}" alt="" style="max-width:65%" class="img-fluid">
                     </td>
                     <td>
-                        <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-warning mb-2">Edit</a>
+                        <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-warning mb-2"><i class="bx bx-edit"></i></a>
                         <form action="{{ route('sliders.destroy', $slider->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Hapus</button>
+                            <button type="submit" class="btn btn-danger"><i class="bx bx-trash"></i></button>
                         </form>
                     </td>
                 </tr>
