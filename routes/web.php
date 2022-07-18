@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,10 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 // Slider
 
 Route::resource('sliders', SliderController::class)->middleware('auth');
+
+// Partner
+
+Route::resource('partners', PartnerController::class)->middleware('auth');
 
 // Contact
 

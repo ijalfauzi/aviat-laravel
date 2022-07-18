@@ -215,7 +215,7 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="/frest/html/ltr/vertical-menu-boxicons-template/index.html">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="/" title="Visit Website">
                         <div class="brand-logo"><img class="logo" src="/assets/images/aviat.webp" /></div>
                         <h2 class="brand-text mb-0">Aviat</h2>
                     </a></li>
@@ -226,8 +226,6 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
                 <li class=" nav-item"><a href="/dashboard"><i class="bx bx-home"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
-                </li>
-                <li class=" nav-item"><a href="/" target="_blank"><i class="bx bx-globe"></i><span class="menu-title" data-i18n="Visit Website">Visit Website</span></a>
                 </li>
                 <li class=" navigation-header"><span>Apps</span>
                 </li>
