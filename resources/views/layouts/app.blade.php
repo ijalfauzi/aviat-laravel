@@ -268,7 +268,7 @@
                     </ul>
                 </li><li class=" navigation-header"><span>Dynamic Contents</span>
                 </li>
-                <li class=" nav-item"><a href="/sliders"><i class="bx bx-slideshow"></i><span class="menu-title" data-i18n="Client List">Clients</span></a>
+                <li class=" nav-item"><a href="/clients"><i class="bx bx-slideshow"></i><span class="menu-title" data-i18n="Client List">Clients</span></a>
                 </li>
                 <li class=" nav-item"><a href="/partners"><i class="bx bx-briefcase"></i><span class="menu-title" data-i18n="Client List">Partners</span></a>
                 </li>
