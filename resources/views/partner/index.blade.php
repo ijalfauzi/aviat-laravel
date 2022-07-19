@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        <a href="/partners/create" class="btn btn-primary mb-3">Add Image</a>
+        <a href="/partners/create" class="btn btn-primary mb-3"><i class="bx bx-plus"></i>Add Image</a>
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
                 <strong>Berhasil</strong>
