@@ -44,4 +44,4 @@ Route::resource('partners', PartnerController::class)->middleware('auth');
 
 Route::get('/contact-us', [ContactController::class, 'index']);
 Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.store');
-Route::get('contactsDB', [ContactController::class, 'show'])->middleware('auth');
+Route::get('contacts', [ContactController::class, 'show'])->middleware('auth');
