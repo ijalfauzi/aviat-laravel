@@ -247,15 +247,15 @@
                 </li>
                 <li class=" nav-item"><a href="#"><i class="bx bx-data"></i><span class="menu-title" data-i18n="Form Data">Form Data</span></a>
                     <ul class="menu-content">
-                        <li><a href="#"><i class="bx bx-laptop"></i><span class="menu-item" data-i18n="Request Demo">Request Demo</span></a>
+                        <li><a href="/data-demo"><i class="bx bx-laptop"></i><span class="menu-item" data-i18n="Request Demo">Request Demo</span></a>
                         </li>
-                        <li><a href="#"><i class="bx bx-building"></i><span class="menu-item" data-i18n="Company Profile">Company Profile</span></a>
+                        <li><a href="/data-compro"><i class="bx bx-building"></i><span class="menu-item" data-i18n="Company Profile">Company Profile</span></a>
                         </li>
-                        <li><a href="#"><i class="bx bx-phone"></i><span class="menu-item" data-i18n="Contact Us">Contact Us</span></a>
+                        <li><a href="/data-contact"><i class="bx bx-phone"></i><span class="menu-item" data-i18n="Contact Us">Contact Us</span></a>
                         </li>
-                        <li><a href="#"><i class="bx bx-show"></i><span class="menu-item" data-i18n="Preview Modul">Preview Modul</span></a>
+                        <li><a href="/data-modul"><i class="bx bx-show"></i><span class="menu-item" data-i18n="Preview Modul">Preview Modul</span></a>
                         </li>
-                        <li><a href="#"><i class="bx bxl-whatsapp"></i><span class="menu-item" data-i18n="Preview Modul">WhatsApp</span></a>
+                        <li><a href="/data-whatsapp"><i class="bx bxl-whatsapp"></i><span class="menu-item" data-i18n="WhatsApp">WhatsApp</span></a>
                         </li>
                     </ul>
                 </li>
