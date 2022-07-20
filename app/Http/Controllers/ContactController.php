@@ -9,7 +9,14 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('contact-us');
+        return view('contact.contact-us');
+    }
+
+    public function show()
+    {
+        $contacts = Contact::all();
+
+        return view('contact.data', compact('contacts'));
     }
 
     public function save(Request $request)
@@ -33,7 +40,7 @@ class ContactController extends Controller
         $contact->kebutuhan = $request->kebutuhan;
         $contact->save();
 
-        \Mail::send('contact_email',
+        \Mail::send('contact.contact_email',
              array(
                 'nama' => $request->get('nama'),
                 'whatsapp' => $request->get('whatsapp'),
