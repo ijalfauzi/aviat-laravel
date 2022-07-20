@@ -16,11 +16,6 @@ class HomeController extends Controller
         return view('home.about');
     }
 
-    public function kontak()
-    {
-        return view('home.kontak-kami');
-    }
-
     public function modul()
     {
         return view('home.preview-modul');
